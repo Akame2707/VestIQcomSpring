@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f5f0">
+    <meta name="description" content="VestIQ: organize suas peças e descubra novas possibilidades para se vestir.">
+    <title>VestIQ — vista o seu melhor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <script src="/Assets/js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="VestIQ, início"><span class="brand-mark">V</span>vest<span>IQ</span></a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="navigation" aria-label="Navegação principal">
+            <a href="#beneficios">Como funciona</a>
+            <a href="#pecas">Seu acervo</a>
+            <a class="nav-cta" href="#comecar">Começar agora <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> SEU ESTILO, EM EQUILÍBRIO</p>
+                <h1>Vista o seu<br><em>melhor.</em></h1>
+                <p class="hero-description">Um guarda-roupa mais inteligente começa com o que você já tem. Organize suas peças, encontre combinações e vista-se com intenção.</p>
+                <div class="hero-actions"><a class="button button-dark" href="#comecar">Organizar meu guarda-roupa <span>↗</span></a><a class="text-link" href="#beneficios">Conheça o VestIQ <span>↓</span></a></div>
+                <div class="social-proof"><div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span></div><p><strong>Seu estilo começa aqui.</strong><br>Mais leveza na hora de se vestir.</p></div>
+            </div>
+            <div class="hero-visual" aria-label="Inspiração de estilo: peças cuidadosamente selecionadas">
+                <div class="image-frame"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85" alt="Pessoa escolhendo roupas em um closet iluminado"></div>
+                <div class="visual-note"><span class="note-icon">✳</span><span>Menos excesso.<br><strong>Mais você.</strong></span></div>
+                <span class="image-index">01 — 03</span>
+            </div>
+            <a class="scroll-cue" href="#beneficios"><span></span> ROLE PARA DESCOBRIR</a>
+        </section>
+
+        <section class="benefits section-wrap" id="beneficios">
+            <div class="section-heading"><p class="eyebrow">UM NOVO JEITO DE SE VESTIR</p><h2>Seu armário tem<br><em>mais possibilidades.</em></h2></div>
+            <div class="benefit-grid">
+                <article class="benefit-card"><span class="card-number">01</span><span class="card-icon">◫</span><h3>Tenha tudo à vista</h3><p>Cadastre suas peças e descubra o que já faz parte do seu estilo.</p></article>
+                <article class="benefit-card"><span class="card-number">02</span><span class="card-icon">✳</span><h3>Redescubra combinações</h3><p>Enxergue novas possibilidades com as roupas que você já ama.</p></article>
+                <article class="benefit-card"><span class="card-number">03</span><span class="card-icon">♡</span><h3>Escolha com intenção</h3><p>Uma rotina mais simples, consciente e com a sua cara.</p></article>
+            </div>
+        </section>
+
+        <section class="closet-section" id="pecas">
+            <div class="closet-inner"><div><p class="eyebrow">UM PASSO DE CADA VEZ</p><h2>Comece pelas<br><em>suas peças favoritas.</em></h2><p class="closet-description">Adicione uma peça ao seu acervo e dê o primeiro passo para um guarda-roupa que funciona para você.</p></div>
+                <form class="piece-form" id="formMaterial">
+                    <h3>Adicionar uma peça</h3><p>Ela já está pronta para ganhar um novo lugar.</p>
+                    <label for="nome">Nome da peça</label><input type="text" id="nome" name="nome" placeholder="Ex.: camisa de linho" required maxlength="100">
+                    <label for="tipo">Categoria</label><input type="text" id="tipo" name="tipo" placeholder="Ex.: camisa, calça, acessório" required maxlength="60">
+                    <label for="quantidade">Quantidade</label><input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+                    <button class="button button-dark form-button" type="submit">Adicionar ao meu acervo <span>↗</span></button>
+                    <p id="formFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+        <section class="closing section-wrap" id="comecar"><span class="closing-star">✳</span><p>O seu estilo já está aí.</p><h2>Vamos encontrar<br><em>novas possibilidades?</em></h2><a class="button button-dark" href="#pecas">Começar meu acervo <span>↗</span></a></section>
+    </main>
+    <footer><a class="brand" href="#inicio"><span class="brand-mark">V</span>vest<span>IQ</span></a><p>Vista com intenção. Viva com leveza.</p><span>© <span id="year"></span> VestIQ</span></footer>
+</body>
+</html>
